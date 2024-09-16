@@ -83,14 +83,14 @@
   "certificate": [
     {
       "id": 0,
-      "name": "TOEIC 1000점",
-      "date": "2019. 07. 28",
+      "name": "정보 처리 기사",
+      "date": "2024. 06. 18",
       "organizer": "ETS"
     },
     {
       "id": 1,
-      "name": "OPIC IH",
-      "date": "2019. 07. 28",
+      "name": "SQLD",
+      "date": "2024. 09. 20",
       "organizer": "ETS"
     }
   ],
