@@ -15,68 +15,78 @@
   "workExperience": [
     {
       "id": 0,
-      "name": "커피프린스 1호점",
-      "position": "Front-end Engineer",
-      "period": ["2019. 01", "2019. 09"]
-    },
-    {
-      "id": 1,
-      "name": "커피프린스 2호점",
-      "position": "바리스타",
-      "period": ["2022. 01", "now"]
+      "name": "DNX",
+      "position": "Full-Stack Engineer",
+      "period": ["2023. 01", "2023. 08"]
     }
   ],
 
   "project": [
     {
       "id": 0,
-      "name": "첫번째 팀 프로젝트",
-      "description": "프로젝트에 대한 간단한 설명을 적을 수 있습니다. 어떤 프로젝트인지 주제나 강조하고 싶은 부분을 적어보세요.",
-      "webUrl": "https://github.com/sjoleee/",
-      "repoUrl": "https://github.com/sjoleee/",
+      "name": "마이 펫 로드",
+      "description": "산책 시 반려견과 이동하며 기록되는 소형 GPS 장치의 위치 정보를 실시간 기록 및 저장       산책 속도에 따른 위치 값 그라데이션 기능을 통해 체계적인 산책 데이터 제공",
+      "repoUrl": "https://github.com/viaunixue/MyPetRoadApp/",
       "isTeam": true,
-      "period": ["2022. 07", "2022. 09"],
-      "stack": ["사용한 기술을 적어주세요", "React.js", "JavaScript", "styled-components", "Recoil"]
+      "period": ["2023. 03", "2023. 06"],
+      "stack": ["Java", "Springboot", "Kotlin", "Android", "MySQL"]
     },
     {
       "id": 1,
-      "name": "첫번째 개인 프로젝트",
-      "description": "프로젝트에 대한 간단한 설명을 적을 수 있습니다. 어떤 프로젝트인지 주제나 강조하고 싶은 부분을 적어보세요.",
-      "webUrl": "https://github.com/sjoleee/",
-      "repoUrl": "https://github.com/sjoleee/",
+      "name": "채팅 서버 구축",
+      "description": "C++과 Python 기반의 비동기 멀티 스레드 채팅 서버 개발                                     클라이언트-서버 구조에서의 실시간 메시징과 다중 연결 처리 원리를 학습",
+      "repoUrl": "https://github.com/viaunixue/mju-backend-study/blob/main/project/chat_server/server/README.md",
       "isTeam": false,
-      "period": ["2022. 10", "2022. 11"],
-      "stack": ["JavaScript", "HTML/CSS"]
+      "period": ["2023. 09", "2023. 10"],
+      "stack": ["C++", "Python", "스레드 프로그래밍", "I/O Multiplexing", "JSON", "Protocol Buffers"]
+    },
+    {
+      "id": 2,
+      "name": "Todo 앱 배포",
+      "description": "메모장 서비스를 AWS 환경에 배포하여 고가용성과 확장성을 구현                                     클라우드 환경에서 로드 밸런싱과 고가용성 설계, 사용자 인증 처리 방법을 학습",
+      "repoUrl": "https://github.com/viaunixue/mju-backend-study/blob/main/project/memo_server/memo_service.md",
+      "isTeam": false,
+      "period": ["2023. 11", "2023. 12"],
+      "stack": ["EC2", "Load Balancer", "Docker", "Redis", "Python", "Flask", "Nginx", "uWSGI", "Naver OAuth API"]
+    },
+    {
+      "id": 3,
+      "name": "블록체인 기반 SNS 챌린지",
+      "description": "블록체인의 특성을 활용하여 SNS 챌린지 참여와 보상 시스템을 탈중앙화된 형태로 구현       사용자는 토큰을 지불하여 챌린지를 생성하고, 다른 사용자는 이를 보고 참여",
+      "repoUrl": "https://github.com/viaunixue/2023_ICP_hackathon",
+      "isTeam": true,
+      "period": ["2023. 10", "2023. 11"],
+      "stack": ["React", "TypeScript", "DFINITY ICP", "Azle", "DFX", "Node.js", "BlockChain"]
     }
   ],
 
   "activity": [
     {
       "id": 0,
-      "name": "첫번째 활동",
-      "period": ["2022. 06", "2022. 08"],
-      "description": "첫번째 활동에 대한 간략한 설명"
+      "name": "우아한 테크코스 프리코스",
+      "period": ["2023. 10", "2023. 12"],
+      "description": "주어진 프로그래밍 미션을 수행하며 백엔드 프로그래밍 학습과 개발자들 간의 코드 리뷰를 통해 개선된 코드를 만들어나갔습니다."
     },
     {
       "id": 1,
-      "name": "두번째 활동",
-      "period": ["2022. 06", "2022. 08"],
-      "description": "두번째 활동에 대한 간략한 설명"
+      "name": "LG Aimers",
+      "period": ["2024. 01", "2024. 02"],
+      "description": "전통적인 통계 기반의 접근 방법, 최신 트렌드 AI 기술, 관련 도메인 지식 등 현업에서 필수적인 AI 기초 역량을 학습했습니다."
     }
   ],
 
   "education": [
     {
       "id": 0,
-      "name": "첫번째 교육",
-      "period": ["2013. 02", "2020. 02"],
-      "description": "첫번째 교육에 대한 간략한 설명"
+      "name": "명지대학교",
+      "period": ["2016. 03", "2024. 02"],
+      "description": "컴퓨터공학과 전공"
     },
     {
       "id": 1,
-      "name": "두번째 교육",
-      "period": ["2013. 02", "2020. 02"],
-      "description": "두번째 교육에 대한 간략한 설명"
+      "name": "ICT 보안 전문가 양성 교육",
+      "period": ["2020. 07", "2021. 01"],
+      "description": "보안 구축 기초 능력 함양 및 침해 진단, 모의 해킹 프로젝트 실습"
     }
   ],
 
@@ -98,10 +108,17 @@
   "award": [
     {
       "id": 0,
-      "name": "첫번째 수상",
-      "date": "2019. 07. 28",
-      "organizer": "수여기관",
-      "description": "첫번째 수상에 대한 간략한 설명"
+      "name": "교내 캡스톤 디자인 3등",
+      "date": "2023. 06. 18",
+      "organizer": "명지대학교",
+      "description": "GPS를 이용한 반려동물 산책 도우미 서비스 개발"
+    },
+    {
+      "id": 1,
+      "name": "제 1회 ICP 블록체인 해커톤 우승",
+      "date": "2023. 11. 23",
+      "organizer": "ABC 아카데미",
+      "description": "블록체인 기반 SNS 챌린지 서비스 개발"
     }
   ]
 }
