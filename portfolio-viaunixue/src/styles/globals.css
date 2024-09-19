@@ -61,3 +61,93 @@
     @apply pt-2;
   }
 }
+
+@layer components {
+  .container {
+    @apply max-w-4xl mx-auto px-4 py-8;
+  }
+  
+  .contact-item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    color: #495057;
+    transition: color 0.3s;
+    overflow: hidden;
+  }
+
+  .contact-item::before,
+  .contact-item::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  .contact-item::before {
+    background-color: white;
+    z-index: -2;
+  }
+
+  .contact-item::after {
+    border: 2px solid transparent;
+    z-index: -1;
+  }
+
+  .contact-item:hover {
+    color: white;
+  }
+
+  .contact-item:hover::before {
+    background-color: #495057;
+  }
+
+  .contact-item:hover::after {
+    border-color: white;
+    border-top-color: #495057;
+    animation: spin 1.5s linear infinite;
+  }
+
+  .contact-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    transition: transform 0.3s;
+  }
+
+  .contact-item:hover svg {
+    transform: scale(1.0);
+  }
+
+  /* 메일 아이콘 특별 처리 */
+  .email-icon svg {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+  }
+
+  /* GitHub와 블로그 아이콘 특별 처리 */
+  .github-icon svg,
+  .blog-icon svg {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
