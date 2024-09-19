@@ -1,23 +1,37 @@
-import { ReactNode } from "react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faBlogger } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const ContactItem = ({
-  children,
-  isEmail,
-  href,
-  className,
-}: {
-  children: ReactNode;
+interface ContactItemProps {
   href: string;
+  name: string;
   isEmail?: boolean;
-  className?: string;
-}) => {
+}
+
+const ContactItem: React.FC<ContactItemProps> = ({ href, name, isEmail }) => {
+  const getIcon = (name: string) => {
+    switch (name.toLowerCase()) {
+      case 'github':
+        return faGithub;
+      case 'blog':
+        return faBlogger;
+      case 'email':
+        return faEnvelope;
+      default:
+        return faEnvelope;
+    }
+  };
+
   return (
-    <a target="_blank" rel="noreferrer" href={isEmail ? `mailto:${href}` : href} className="w-fit">
-      <span
-        className={`px-1 text-xs dark:text-GRAY_HEAVY hover:text-BLACK dark:hover:text-BLACK ${className}`}
-      >
-        {children}
-      </span>
+    <a
+      href={isEmail ? `mailto:${href}` : href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`contact-item ${name.toLowerCase()}-icon`}
+      aria-label={name}
+    >
+      <FontAwesomeIcon icon={getIcon(name)} />
     </a>
   );
 };

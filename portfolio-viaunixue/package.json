@@ -11,6 +11,10 @@
     "tsc": "tsc"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@next/font": "13.1.5",
     "@svgr/webpack": "^6.5.1",
     "@types/node": "18.11.18",
