@@ -25,7 +25,10 @@
     {
       "id": 0,
       "name": "마이 펫 로드",
-      "description": "산책 시 반려견과 이동하며 기록되는 소형 GPS 장치의 위치 정보를 실시간 기록 및 저장       산책 속도에 따른 위치 값 그라데이션 기능을 통해 체계적인 산책 데이터 제공",
+      "description": [
+        "산책 시 반려견과 이동하며 기록되는 소형 GPS 장치의 위치 정보를 실시간 기록 및 저장",
+        "산책 속도에 따른 위치 값 그라데이션 기능을 통해 체계적인 산책 데이터 제공"
+      ],
       "repoUrl": "https://github.com/viaunixue/MyPetRoadApp/",
       "isTeam": true,
       "period": ["2023. 03", "2023. 06"],
@@ -34,7 +37,10 @@
     {
       "id": 1,
       "name": "채팅 서버 구축",
-      "description": "C++과 Python 기반의 비동기 멀티 스레드 채팅 서버 개발                                     클라이언트-서버 구조에서의 실시간 메시징과 다중 연결 처리 원리를 학습",
+      "description": [
+        "C++과 Python 기반의 비동기 멀티 스레드 채팅 서버 개발 ",
+        "클라이언트-서버 구조에서의 실시간 메시징과 다중 연결 처리 원리를 학습"
+      ],
       "repoUrl": "https://github.com/viaunixue/mju-backend-study/blob/main/project/chat_server/server/README.md",
       "isTeam": false,
       "period": ["2023. 09", "2023. 10"],
@@ -43,7 +49,10 @@
     {
       "id": 2,
       "name": "Todo 앱 배포",
-      "description": "메모장 서비스를 AWS 환경에 배포하여 고가용성과 확장성을 구현                                     클라우드 환경에서 로드 밸런싱과 고가용성 설계, 사용자 인증 처리 방법을 학습",
+      "description": [
+        "메모장 서비스를 AWS 환경에 배포하여 고가용성과 확장성을 구현",
+        "클라우드 환경에서 로드 밸런싱과 고가용성 설계, 사용자 인증 처리 방법을 학습"
+      ],
       "repoUrl": "https://github.com/viaunixue/mju-backend-study/blob/main/project/memo_server/memo_service.md",
       "isTeam": false,
       "period": ["2023. 11", "2023. 12"],
@@ -52,7 +61,10 @@
     {
       "id": 3,
       "name": "블록체인 기반 SNS 챌린지",
-      "description": "블록체인의 특성을 활용하여 SNS 챌린지 참여와 보상 시스템을 탈중앙화된 형태로 구현       사용자는 토큰을 지불하여 챌린지를 생성하고, 다른 사용자는 이를 보고 참여",
+      "description": [
+        "블록체인의 특성을 활용하여 SNS 챌린지 참여와 보상 시스템을 탈중앙화된 형태로 구현",
+        "사용자는 토큰을 지불하여 챌린지를 생성하고, 다른 사용자는 이를 보고 참여"
+      ],
       "repoUrl": "https://github.com/viaunixue/2023_ICP_hackathon",
       "isTeam": true,
       "period": ["2023. 10", "2023. 11"],

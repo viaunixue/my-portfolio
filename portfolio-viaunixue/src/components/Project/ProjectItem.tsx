@@ -42,7 +42,17 @@ const ProjectItem = ({
       </div>
       <div className="md:border-GRAY_LIGHT md:border-solid md:border-l-[1px] md:pl-4 markdown flex flex-col w-full gap-2">
         <div>
-          <blockquote className="whitespace-pre-wrap">{`${description}`}</blockquote>
+        <blockquote className="whitespace-pre-wrap">
+            {Array.isArray(description) ? (
+              description.map((desc, index) => (
+                <p key={index}>
+                  {desc}
+                </p>
+              ))
+            ) : (
+              <p>{description}</p>
+            )}
+          </blockquote>
           <div className="flex gap-1 flex-wrap">
             {stack.map((stack) => (
               <span
