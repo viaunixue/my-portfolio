@@ -7,31 +7,37 @@ interface ContactItemProps {
   href: string;
   name: string;
   isEmail?: boolean;
+  isFooter?: boolean;
 }
 
-const ContactItem: React.FC<ContactItemProps> = ({ href, name, isEmail }) => {
-  const getIcon = (name: string) => {
+const ContactItem: React.FC<ContactItemProps> = ({ href, name, isEmail, isFooter }) => {
+  const getIcon = () => {
     switch (name.toLowerCase()) {
+      case 'email':
+        return faEnvelope;
       case 'github':
         return faGithub;
       case 'blog':
         return faBlogger;
-      case 'email':
-        return faEnvelope;
       default:
         return faEnvelope;
     }
   };
+
+  const baseClasses = "contact-item transition-colors duration-300";
+  const colorClasses = isFooter
+    ? "text-white hover:text-PRIMARY"
+    : "text-black hover:text-PRIMARY";
 
   return (
     <a
       href={isEmail ? `mailto:${href}` : href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`contact-item ${name.toLowerCase()}-icon`}
+      className={`${baseClasses} ${colorClasses}`}
       aria-label={name}
     >
-      <FontAwesomeIcon icon={getIcon(name)} />
+      <FontAwesomeIcon icon={getIcon()} className="w-6 h-6" />
     </a>
   );
 };

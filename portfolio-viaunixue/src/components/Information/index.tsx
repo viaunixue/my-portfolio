@@ -29,6 +29,7 @@ const Information = ({ information }: Pick<DataProps, "information">) => {
               <ContactItem
                 key={contact.id}
                 {...contact}
+                isFooter={false}
               />
             ))}
           </div>
